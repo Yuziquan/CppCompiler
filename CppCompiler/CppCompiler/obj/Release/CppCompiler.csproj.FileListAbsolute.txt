@@ -1,0 +1,11 @@
+E:\C#_projects\CppCompiler\CppCompiler\bin\Release\CppCompiler.exe
+E:\C#_projects\CppCompiler\CppCompiler\bin\Release\CppCompiler.pdb
+E:\C#_projects\CppCompiler\CppCompiler\obj\Release\CppCompiler.csprojAssemblyReference.cache
+E:\C#_projects\CppCompiler\CppCompiler\obj\Release\CppCompiler.AboutForm.resources
+E:\C#_projects\CppCompiler\CppCompiler\obj\Release\CppCompiler.LexicalAnalysisForm.resources
+E:\C#_projects\CppCompiler\CppCompiler\obj\Release\CppCompiler.MainMenu.resources
+E:\C#_projects\CppCompiler\CppCompiler\obj\Release\CppCompiler.Properties.Resources.resources
+E:\C#_projects\CppCompiler\CppCompiler\obj\Release\CppCompiler.csproj.GenerateResource.cache
+E:\C#_projects\CppCompiler\CppCompiler\obj\Release\CppCompiler.csproj.CoreCompileInputs.cache
+E:\C#_projects\CppCompiler\CppCompiler\obj\Release\CppCompiler.exe
+E:\C#_projects\CppCompiler\CppCompiler\obj\Release\CppCompiler.pdb
