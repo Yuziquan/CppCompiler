@@ -32,7 +32,17 @@
 
 
 ***
-#### 3. xxx
+#### 3. 词法分析器生成器界面
+
+![4](https://github.com/Yuziquan/CppCompiler/blob/master/Screenshots/4.png)
+
+
+***
+#### 4. xxx
+
+
+
+
 。。。。。。。(后期要开发的菜单项)
 
 
@@ -41,7 +51,7 @@
 
 #### 6. 关于
 
-![about](https://github.com/Yuziquan/CppCompiler/blob/master/Screenshots/4.png)
+![about](https://github.com/Yuziquan/CppCompiler/blob/master/Screenshots/about.png)
 
 
 
@@ -74,7 +84,6 @@
 
 #### 4、V2.0.0
 * 完成词法分析器生成器模块；
-
 
 
 ***
