@@ -49,6 +49,25 @@
     <Compile Include="AboutForm.Designer.cs">
       <DependentUpon>AboutForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="LexerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LexerForm.Designer.cs">
+      <DependentUpon>LexerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LexerGeneratorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LexerGeneratorForm.Designer.cs">
+      <DependentUpon>LexerGeneratorForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lexical_Analysis\DFA.cs" />
+    <Compile Include="Lexical_Analysis\DFAStateNode.cs" />
+    <Compile Include="Lexical_Analysis\Edge.cs" />
+    <Compile Include="Lexical_Analysis\Lexer.cs" />
+    <Compile Include="Lexical_Analysis\NFA.cs" />
+    <Compile Include="Lexical_Analysis\Node.cs" />
+    <Compile Include="Lexical_Analysis\RegularExpression.cs" />
     <Compile Include="LexicalAnalysisForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -61,10 +80,17 @@
     <Compile Include="MainMenu.Designer.cs">
       <DependentUpon>MainMenu.cs</DependentUpon>
     </Compile>
+    <Compile Include="Lexical_Analysis\NFAStateNode.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="AboutForm.resx">
       <DependentUpon>AboutForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LexerForm.resx">
+      <DependentUpon>LexerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LexerGeneratorForm.resx">
+      <DependentUpon>LexerGeneratorForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LexicalAnalysisForm.resx">
       <DependentUpon>LexicalAnalysisForm.cs</DependentUpon>

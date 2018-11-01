@@ -205,8 +205,7 @@
             this.MaximizeBox = false;
             this.Name = "LexicalAnalysisForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "词法分析";
-            this.Load += new System.EventHandler(this.LexicalAnalysisForm_Load);
+            this.Text = "C++源代码单词扫描程序（词法分析）";
             this.tsLexicalAnalysis.ResumeLayout(false);
             this.tsLexicalAnalysis.PerformLayout();
             this.ResumeLayout(false);

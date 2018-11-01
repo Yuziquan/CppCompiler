@@ -22,10 +22,18 @@ namespace CppCompiler
             lexicalAnalysisForm.Show();
         }
 
+  
+
         private void btnAbout_Click(object sender, EventArgs e)
         {
             AboutForm aboutForm = new AboutForm();
             aboutForm.Show();
+        }
+
+        private void btnLexerGenerator_Click(object sender, EventArgs e)
+        {
+            LexerGeneratorForm lexerGeneratorForm = new LexerGeneratorForm();
+            lexerGeneratorForm.Show();
         }
     }
 }

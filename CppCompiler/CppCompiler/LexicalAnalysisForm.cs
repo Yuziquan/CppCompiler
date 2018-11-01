@@ -45,7 +45,10 @@ namespace CppCompiler
 
 
 
-        // 显示源文件的内容
+        /// <summary>
+        /// 显示源文件的内容
+        /// </summary>
+        /// <param name="sourceFileFullName"></param>
         private void DisplaySourceFileContent(string sourceFileFullName)
         {
             rtxtSourceFileContent.ForeColor = Color.Blue;
@@ -687,17 +690,10 @@ namespace CppCompiler
                 if (saveFileDialog.ShowDialog() == DialogResult.OK)
                 {
                     StreamWriter streamWriter = new StreamWriter(saveFileDialog.FileName);
-
                     streamWriter.Write(compressResultStringBuilder.ToString());                    
-
                     streamWriter.Close();
                 }
             }
-        }
-
-        private void LexicalAnalysisForm_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

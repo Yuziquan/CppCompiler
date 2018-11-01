@@ -20,3 +20,16 @@ E:\C#_projects\CppCompiler\CppCompiler\obj\Debug\CppCompiler.csproj.CoreCompileI
 E:\C#_projects\CppCompiler\CppCompiler\obj\Debug\CppCompiler.exe
 E:\C#_projects\CppCompiler\CppCompiler\obj\Debug\CppCompiler.pdb
 E:\C#_projects\CppCompiler\CppCompiler\obj\Debug\CppCompiler.csprojAssemblyReference.cache
+E:\Codes\GitHub\CppCompiler\CppCompiler\CppCompiler\bin\Debug\CppCompiler.exe
+E:\Codes\GitHub\CppCompiler\CppCompiler\CppCompiler\bin\Debug\CppCompiler.pdb
+E:\Codes\GitHub\CppCompiler\CppCompiler\CppCompiler\obj\Debug\CppCompiler.csprojAssemblyReference.cache
+E:\Codes\GitHub\CppCompiler\CppCompiler\CppCompiler\obj\Debug\CppCompiler.AboutForm.resources
+E:\Codes\GitHub\CppCompiler\CppCompiler\CppCompiler\obj\Debug\CppCompiler.LexerForm.resources
+E:\Codes\GitHub\CppCompiler\CppCompiler\CppCompiler\obj\Debug\CppCompiler.LexerGeneratorForm.resources
+E:\Codes\GitHub\CppCompiler\CppCompiler\CppCompiler\obj\Debug\CppCompiler.LexicalAnalysisForm.resources
+E:\Codes\GitHub\CppCompiler\CppCompiler\CppCompiler\obj\Debug\CppCompiler.MainMenu.resources
+E:\Codes\GitHub\CppCompiler\CppCompiler\CppCompiler\obj\Debug\CppCompiler.Properties.Resources.resources
+E:\Codes\GitHub\CppCompiler\CppCompiler\CppCompiler\obj\Debug\CppCompiler.csproj.GenerateResource.cache
+E:\Codes\GitHub\CppCompiler\CppCompiler\CppCompiler\obj\Debug\CppCompiler.csproj.CoreCompileInputs.cache
+E:\Codes\GitHub\CppCompiler\CppCompiler\CppCompiler\obj\Debug\CppCompiler.exe
+E:\Codes\GitHub\CppCompiler\CppCompiler\CppCompiler\obj\Debug\CppCompiler.pdb

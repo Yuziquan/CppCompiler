@@ -32,6 +32,7 @@
             this.lblApplicationName = new System.Windows.Forms.Label();
             this.btnLexicalAnalysis = new System.Windows.Forms.Button();
             this.btnAbout = new System.Windows.Forms.Button();
+            this.btnLexerGenerator = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblApplicationName
@@ -48,11 +49,11 @@
             // 
             this.btnLexicalAnalysis.BackColor = System.Drawing.SystemColors.Control;
             this.btnLexicalAnalysis.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnLexicalAnalysis.Location = new System.Drawing.Point(232, 73);
+            this.btnLexicalAnalysis.Location = new System.Drawing.Point(180, 72);
             this.btnLexicalAnalysis.Name = "btnLexicalAnalysis";
-            this.btnLexicalAnalysis.Size = new System.Drawing.Size(145, 29);
+            this.btnLexicalAnalysis.Size = new System.Drawing.Size(266, 29);
             this.btnLexicalAnalysis.TabIndex = 1;
-            this.btnLexicalAnalysis.Text = "词法分析";
+            this.btnLexicalAnalysis.Text = "C++源代码单词扫描程序（词法分析）";
             this.btnLexicalAnalysis.UseVisualStyleBackColor = false;
             this.btnLexicalAnalysis.Click += new System.EventHandler(this.btnLexicalAnalysis_Click);
             // 
@@ -67,12 +68,25 @@
             this.btnAbout.UseVisualStyleBackColor = false;
             this.btnAbout.Click += new System.EventHandler(this.btnAbout_Click);
             // 
+            // btnLexerGenerator
+            // 
+            this.btnLexerGenerator.BackColor = System.Drawing.SystemColors.Control;
+            this.btnLexerGenerator.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnLexerGenerator.Location = new System.Drawing.Point(180, 125);
+            this.btnLexerGenerator.Name = "btnLexerGenerator";
+            this.btnLexerGenerator.Size = new System.Drawing.Size(266, 28);
+            this.btnLexerGenerator.TabIndex = 3;
+            this.btnLexerGenerator.Text = "词法分析器生成器";
+            this.btnLexerGenerator.UseVisualStyleBackColor = false;
+            this.btnLexerGenerator.Click += new System.EventHandler(this.btnLexerGenerator_Click);
+            // 
             // MainMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.ClientSize = new System.Drawing.Size(618, 350);
+            this.ClientSize = new System.Drawing.Size(618, 310);
+            this.Controls.Add(this.btnLexerGenerator);
             this.Controls.Add(this.btnAbout);
             this.Controls.Add(this.btnLexicalAnalysis);
             this.Controls.Add(this.lblApplicationName);
@@ -94,6 +108,7 @@
         private System.Windows.Forms.Label lblApplicationName;
         private System.Windows.Forms.Button btnLexicalAnalysis;
         private System.Windows.Forms.Button btnAbout;
+        private System.Windows.Forms.Button btnLexerGenerator;
     }
 }
 
