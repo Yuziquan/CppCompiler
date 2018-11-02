@@ -108,14 +108,10 @@ namespace CppCompiler.Lexical_Analysis
 
             int curIndex = 0;
 
-            int test = 100;
-
             while (curIndex < regexSplited.Length 
                 &&((regexSplited[curIndex] != RegularExpression.END_OF_REGEX)
                 || (operatorStack.Peek() != RegularExpression.END_OF_REGEX)))
             {
-                test--;
-
                 if(RegularExpression.IsOperand(regexSplited[curIndex]))
                 {
                     operandStack.Push(SingleCharCreate(regexSplited[curIndex]));
@@ -164,8 +160,6 @@ namespace CppCompiler.Lexical_Analysis
                 }
             }
 
-            test++;
-
             startStateNode = operandStack.Peek().StartStateNode;
             AddToEndStateNodes(operandStack.Peek().EndStateNode);
         }
@@ -210,6 +204,8 @@ namespace CppCompiler.Lexical_Analysis
             return new StartEndPair(newStartStateNode, newEndStateNode);
         }
 
+
+
         /// <summary>
         /// 或操作，创建NFA
         /// </summary>
@@ -229,8 +225,6 @@ namespace CppCompiler.Lexical_Analysis
 
             return new StartEndPair(newStartStateNode, newEndStateNode);
         }
-
-
 
 
         /// <summary>

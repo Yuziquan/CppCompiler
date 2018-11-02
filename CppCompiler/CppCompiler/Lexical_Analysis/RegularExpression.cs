@@ -33,6 +33,7 @@ namespace CppCompiler.Lexical_Analysis
             this.regex = PreProcess(rawRegex);
         }
 
+
         /// <summary>
         /// 对正则表达式进行预处理（进行语法验证并加点）
         /// </summary>
@@ -46,7 +47,6 @@ namespace CppCompiler.Lexical_Analysis
             // 然后对正则表达式进行必要的加点操作
             return AddDot(rawRegex);
         }
-
 
 
         /// <summary>
@@ -112,6 +112,7 @@ namespace CppCompiler.Lexical_Analysis
                 || (a == ')' && b == '('));
         }
 
+
         /// <summary>
         /// 对用户输入的正则表达式进行加点操作
         /// </summary>
@@ -144,8 +145,6 @@ namespace CppCompiler.Lexical_Analysis
         }
 
 
-
-
         /// <summary>
         /// 判断一个字符是否为正则表达式中的合法操作数
         /// </summary>
@@ -153,7 +152,7 @@ namespace CppCompiler.Lexical_Analysis
         /// <returns></returns>
         public static bool IsOperand(char c)
         {
-            Regex regex = new Regex("[a-zA-Z]");
+            Regex regex = new Regex("[a-zA-Z0-9]");
 
             if(regex.IsMatch(c + ""))
             {
@@ -303,7 +302,6 @@ namespace CppCompiler.Lexical_Analysis
 
 
 
-
         private class ExceptionHandler
         {
             public static ArgumentException UnsupportedPriority(char a, char b)
@@ -313,12 +311,12 @@ namespace CppCompiler.Lexical_Analysis
 
             public static ArgumentException UnsupportedOperator(char c)
             {
-                return new ArgumentException("非法的运算符: " + c + "!");
+                return new ArgumentException("非法的运算符: " + c + " !");
             }
 
             public static ArgumentException UnsupportedSymbol(char c)
             {
-                return new ArgumentException("非法的符号: " + c + "!");
+                return new ArgumentException("非法的符号: " + c + " !");
             }
 
             public static ArgumentException NonOperands()
@@ -328,7 +326,7 @@ namespace CppCompiler.Lexical_Analysis
 
             public static ArgumentException IllegalStart()
             {
-                return new ArgumentException("正则表达式不能以 \"#\"开头!");
+                return new ArgumentException("正则表达式不能以 \"#\" 开头!");
             }
 
             public static ArgumentException IllegalOperatorSequence(char c)

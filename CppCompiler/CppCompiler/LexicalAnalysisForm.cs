@@ -14,7 +14,9 @@ namespace CppCompiler
 {
     public partial class LexicalAnalysisForm : Form
     {
-        // 关键字(不够的话，后期可以自行添加)
+        /// <summary>
+        /// 关键字(不够的话，后期可以自行添加)
+        /// </summary>
         private string[] keyword= {"include", "auto", "const", "double", "float", "int", "short", "struct", "unsigned", "enum",
           "break", "continue", "else", "for", "long", "signed", "switch", "void", "case", "default", "goto","register","sizeof", "typedef",
           "volatile", "char", "do", "extern", "if", "return", "static", "union", "while", "asm", "dynamic_cast", "bool", "explicit","new",
@@ -22,26 +24,50 @@ namespace CppCompiler
           "const_cast", "inline","public","throw","virtual","delete","mutable","protected","true","wchar_t", "namespace",
           "reinterpret_cast", "try", "cin", "cout", "iostream. h", "iostream", "std", "stdio.h", "string.h", "endl"};
 
-        // 特殊符号
+
+        /// <summary>
+        /// 特殊符号
+        /// </summary>
         private string[] specialWord = {",", ";", "(", ")", "{", "}", "#", "^", "?", ":", ".", "[", "]", "+", "-", "*", "/", "%",
             "=", ">", "<", "!", "~", "|", "&", "&&", "||", "==", ">=", "<=", "!=", "++", "--", "::", "<<", ">>", "+=", "-=", "*=",
             "/=", "%=", "&=", "^=", "->"};
 
 
-        // 标志当前扫描到的字符是否位于多行注释"/*...*/"中
+        /// <summary>
+        /// 标志当前扫描到的字符是否位于多行注释"/*...*/"中
+        /// </summary>
         private bool commentFlag;
 
-        // 文件的扫描结果
+
+        /// <summary>
+        /// 文件的扫描结果
+        /// </summary>
         private ArrayList scanResult;
 
-        // 文件的压缩结果
+
+        /// <summary>
+        /// 文件的压缩结果
+        /// </summary>
         private StringBuilder compressResultStringBuilder;
 
-        // 文件是否已经扫描
+
+        /// <summary>
+        /// 文件是否已经扫描
+        /// </summary>
         private bool isScanned;
 
-        // 文件是否已经压缩
+        /// <summary>
+        /// 文件是否已经压缩
+        /// </summary>
         private bool isCompressed;
+
+
+
+        public LexicalAnalysisForm()
+        {
+            InitializeComponent();
+        }
+
 
 
 
@@ -79,7 +105,9 @@ namespace CppCompiler
         }
 
 
-        // 显示扫描结果
+        /// <summary>
+        /// 显示扫描结果
+        /// </summary>
         private void DisplayScanResult()
         {
             rtxtScanResult.ForeColor = Color.Red;
@@ -92,7 +120,9 @@ namespace CppCompiler
         }
 
 
-        // 显示压缩结果
+        /// <summary>
+        /// 显示压缩结果
+        /// </summary>
         private void DisplayCompressResult()
         {
             rtxtScanResult.ForeColor = Color.Orange;
@@ -102,7 +132,10 @@ namespace CppCompiler
         }
 
 
-        // 对一行字符串进行词法分析
+        /// <summary>
+        /// 对一行字符串进行词法分析
+        /// </summary>
+        /// <param name="oneLineCode"></param>
         private void LexicalAnalysisOnOneLine(string oneLineCode)
         {
             // 字符串oneLineCode当前扫描的位置
@@ -323,7 +356,10 @@ namespace CppCompiler
         }
 
 
-        // 对整个文件进行词法分析扫描
+        /// <summary>
+        /// 对整个文件进行词法分析扫描
+        /// </summary>
+        /// <param name="sourceFileFullName"></param>
         private void LexicalAnalysisOnFile(string sourceFileFullName)
         {
             // 获取文件拓展名
@@ -353,7 +389,10 @@ namespace CppCompiler
         }
 
 
-        // 对一行代码进行压缩
+        /// <summary>
+        /// 对一行代码进行压缩
+        /// </summary>
+        /// <param name="oneLineCode"></param>
         private void CompressOneLine(string oneLineCode)
         {
             // 若一个字符的后一个字符为空格或制表符，则将该字符保存在preChar
@@ -500,7 +539,10 @@ namespace CppCompiler
         }
 
 
-        // 对整个文件进行压缩
+        /// <summary>
+        /// 对整个文件进行压缩
+        /// </summary>
+        /// <param name="sourceFileFullName"></param>
         private void CompressFile(string sourceFileFullName)
         {
             // 获取文件拓展名
@@ -530,8 +572,11 @@ namespace CppCompiler
         }
 
 
-
-        // 判断字符是否代表字母
+        /// <summary>
+        /// 判断字符是否代表字母
+        /// </summary>
+        /// <param name="ch"></param>
+        /// <returns></returns>
         private bool IsAlpha(char ch)
         {
             if(ch >= 'a' && ch <= 'z' || ch >= 'A' && ch <= 'Z')
@@ -545,7 +590,11 @@ namespace CppCompiler
         }
 
 
-        // 判断字符是否代表数字
+        /// <summary>
+        /// 判断字符是否代表数字
+        /// </summary>
+        /// <param name="ch"></param>
+        /// <returns></returns>
         private bool IsDigit(char ch)
         {
             if (ch >= '0' && ch <= '9')
@@ -559,25 +608,27 @@ namespace CppCompiler
         }
 
 
-        // 判断字符是否代表关键字
+        /// <summary>
+        /// 判断字符是否代表关键字
+        /// </summary>
+        /// <param name="str"></param>
+        /// <returns></returns>
         private bool IsKeyword(string str)
         {
             return ((IList)keyword).Contains(str);
         }
 
 
-        // 判断字符是否代表特殊字符
+        /// <summary>
+        /// 判断字符是否代表特殊字符
+        /// </summary>
+        /// <param name="str"></param>
+        /// <returns></returns>
         private bool IsSpecialWord(string str)
         {
             return ((IList)specialWord).Contains(str);
         }
 
-
- 
-        public LexicalAnalysisForm()
-        {
-            InitializeComponent();
-        }
 
        
 

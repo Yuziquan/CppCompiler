@@ -15,6 +15,7 @@ namespace CppCompiler.Lexical_Analysis
         /// </summary>
         public static int counter = 1;
 
+
         /// <summary>
         /// 唯一地标识每个状态节点的id, 该类每生成一个实例，计数器加1，以此来唯一标识该类的一个实例
         /// </summary>
@@ -25,6 +26,7 @@ namespace CppCompiler.Lexical_Analysis
             set { id = value; }
         }
 
+
         /// <summary>
         /// 以此状态为起点的边的集合
         /// </summary>
@@ -34,6 +36,7 @@ namespace CppCompiler.Lexical_Analysis
             get { return edgeList; }
             set { edgeList = value; }
         }
+
 
         /// <summary>
         /// 将当前节点与另一个节点连接

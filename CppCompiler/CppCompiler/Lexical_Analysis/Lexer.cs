@@ -41,6 +41,7 @@ namespace CppCompiler.Lexical_Analysis
         }
 
 
+
         /// <summary>
         /// 生成词法分析程序（C语言描述）
         /// </summary>
@@ -113,6 +114,7 @@ namespace CppCompiler.Lexical_Analysis
                 GenerateCaseCode(node);
             }
         }
+
 
         /// <summary>
         /// 生成"case"部分的代码块

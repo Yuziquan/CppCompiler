@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections;
-using System.Collections.Generic;
+using System.Collections.Generic;                            
 using System.Linq;
 using System.Text;
 
@@ -43,7 +43,6 @@ namespace CppCompiler.Lexical_Analysis
         }
 
 
-
         /// <summary>
         /// 最小化后的DFA中所有的状态节点
         /// </summary>
@@ -67,7 +66,7 @@ namespace CppCompiler.Lexical_Analysis
 
 
         /// <summary>
-        /// 最小化后的DFA包含的结束状态节点
+        /// 最小化后的DFA的结束状态节点
         /// </summary>
         private List<DFAStateNode> minDFAEndStateNodes;
         public List<DFAStateNode> MinDFAEndStateNodes
@@ -90,15 +89,14 @@ namespace CppCompiler.Lexical_Analysis
         }
 
 
+
         public DFA(NFA nfa)
         {
             this.nfa = nfa;
             allStateNodes = new List<DFAStateNode>();
-            startStateNode = new DFAStateNode();
             endStateNodes = new List<DFAStateNode>();
 
             minDFAAllStateNodes = new List<DFAStateNode>();
-            minDFAStartStateNode = new DFAStateNode();
             minDFAEndStateNodes = new List<DFAStateNode>();
 
             CreateDFA(nfa);
@@ -111,8 +109,10 @@ namespace CppCompiler.Lexical_Analysis
         /// <param name="nfa"></param>
         private void CreateDFA(NFA nfa)
         {
+
             Stack<DFAStateNode> stack = new Stack<DFAStateNode>();
-           
+
+            startStateNode = new DFAStateNode();
             startStateNode.AddNFAStateNodeList(NullClosure(nfa.StartStateNode));
             allStateNodes.Add(startStateNode);
 
@@ -211,81 +211,7 @@ namespace CppCompiler.Lexical_Analysis
             }
         }
 
-
-        /// <summary>
-        /// DFA最小化
-        /// </summary>
-        /*public void MiniMize()
-        {
-            List<List<int>> workspace = new List<List<int>>();
-
-            foreach(DFAStateNode node in allStateNodes)
-            {
-                List<int> destNodesId = new List<int>();
-                foreach(char c in nfa.Alphabet)
-                {
-                    if(node.Pass(c) == null)
-                    {
-                        destNodesId.Add(-1);
-                    }
-                    else
-                    {
-                        destNodesId.Add(node.Pass(c).Id);
-                    }
-                }
-
-                workspace.Add(destNodesId);
-            }
-
-
-            // 开始划分
-            List<List<DFAStateNode>> partition = new List<List<DFAStateNode>>();
-            partition.Add(endStateNodes);
-
-            bool[] visited = new bool[workspace.Count];
-            for(int i = 0; i < workspace.Count; i++)
-            {
-                if (visited[i] == true)
-                {
-                    continue;
-                }
-
-                List<DFAStateNode> tempNodes = new List<DFAStateNode>();
-                tempNodes.Add(allStateNodes.ElementAt(i));
-
-                for(int j = i + 1; j < workspace.Count; j++)
-                {
-                    if(workspace.ElementAt(i).Equals(workspace.ElementAt(j)))
-                    {
-                        visited[j] = true;
-                        if(!EndStateNodes.Contains(allStateNodes.ElementAt(j)))
-                        {
-                            tempNodes.Add(allStateNodes.ElementAt(j));
-                        }
-                    }
-                }
-                partition.Add(tempNodes);
-            }
-
-            SelectRepresent(partition);
-        }
-
-
-        private void SelectRepresent(List<List<DFAStateNode>> partition)
-        {
-            foreach(List<DFAStateNode> eachPart  in partition)
-            {
-                foreach(DFAStateNode node in eachPart)
-                {
-
-                }
-            }
-        }
-        */
-
-
-
-
+      
         /// <summary>
         /// DFA最小化
         /// </summary>
@@ -434,6 +360,7 @@ namespace CppCompiler.Lexical_Analysis
         }
 
 
+
         /// <summary>
         /// 根据产生的所有新分组构建最小化DFA
         /// </summary>
@@ -459,7 +386,6 @@ namespace CppCompiler.Lexical_Analysis
                     }
                 }
                 minDFAEndStateNodeGroupIndexes.Sort();
-
 
 
                 sortedGroups.Add(groups.ElementAt(minDFAStartStateNodeGroupIndex));

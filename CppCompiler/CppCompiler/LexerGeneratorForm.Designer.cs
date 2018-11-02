@@ -109,7 +109,7 @@
             this.dgvNFA.AllowUserToAddRows = false;
             this.dgvNFA.AllowUserToDeleteRows = false;
             this.dgvNFA.AllowUserToResizeRows = false;
-            this.dgvNFA.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvNFA.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.dgvNFA.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dgvNFA.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvNFA.ColumnHeadersVisible = false;
@@ -119,7 +119,7 @@
             this.dgvNFA.ReadOnly = true;
             this.dgvNFA.RowHeadersVisible = false;
             this.dgvNFA.RowTemplate.Height = 23;
-            this.dgvNFA.Size = new System.Drawing.Size(413, 405);
+            this.dgvNFA.Size = new System.Drawing.Size(413, 410);
             this.dgvNFA.TabIndex = 1;
             // 
             // dgvDFA
@@ -127,6 +127,8 @@
             this.dgvDFA.AllowUserToAddRows = false;
             this.dgvDFA.AllowUserToDeleteRows = false;
             this.dgvDFA.AllowUserToResizeRows = false;
+            this.dgvDFA.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.dgvDFA.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dgvDFA.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvDFA.ColumnHeadersVisible = false;
             this.dgvDFA.Location = new System.Drawing.Point(431, 152);
@@ -143,6 +145,8 @@
             this.dgvMinDFA.AllowUserToAddRows = false;
             this.dgvMinDFA.AllowUserToDeleteRows = false;
             this.dgvMinDFA.AllowUserToResizeRows = false;
+            this.dgvMinDFA.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.dgvMinDFA.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dgvMinDFA.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvMinDFA.ColumnHeadersVisible = false;
             this.dgvMinDFA.Location = new System.Drawing.Point(889, 152);
@@ -151,13 +155,13 @@
             this.dgvMinDFA.ReadOnly = true;
             this.dgvMinDFA.RowHeadersVisible = false;
             this.dgvMinDFA.RowTemplate.Height = 23;
-            this.dgvMinDFA.Size = new System.Drawing.Size(458, 411);
+            this.dgvMinDFA.Size = new System.Drawing.Size(458, 410);
             this.dgvMinDFA.TabIndex = 3;
             // 
             // lblNFA
             // 
             this.lblNFA.AutoSize = true;
-            this.lblNFA.Location = new System.Drawing.Point(12, 120);
+            this.lblNFA.Location = new System.Drawing.Point(12, 131);
             this.lblNFA.Name = "lblNFA";
             this.lblNFA.Size = new System.Drawing.Size(196, 17);
             this.lblNFA.TabIndex = 4;
@@ -166,7 +170,7 @@
             // lblDFA
             // 
             this.lblDFA.AutoSize = true;
-            this.lblDFA.Location = new System.Drawing.Point(428, 120);
+            this.lblDFA.Location = new System.Drawing.Point(428, 131);
             this.lblDFA.Name = "lblDFA";
             this.lblDFA.Size = new System.Drawing.Size(195, 17);
             this.lblDFA.TabIndex = 5;
@@ -175,7 +179,7 @@
             // lblMinDFA
             // 
             this.lblMinDFA.AutoSize = true;
-            this.lblMinDFA.Location = new System.Drawing.Point(886, 120);
+            this.lblMinDFA.Location = new System.Drawing.Point(886, 131);
             this.lblMinDFA.Name = "lblMinDFA";
             this.lblMinDFA.Size = new System.Drawing.Size(231, 17);
             this.lblMinDFA.TabIndex = 6;
@@ -204,9 +208,10 @@
             this.lblHint.ForeColor = System.Drawing.SystemColors.ControlText;
             this.lblHint.Location = new System.Drawing.Point(68, 93);
             this.lblHint.Name = "lblHint";
-            this.lblHint.Size = new System.Drawing.Size(647, 17);
+            this.lblHint.Size = new System.Drawing.Size(739, 17);
             this.lblHint.TabIndex = 9;
-            this.lblHint.Text = "注意：该正则表达式仅支持操作数(a~z、A~Z)和运算符( |  .  *  (  ) )，其他字符将被视为非法字符。输入样例：a(a|b)*。";
+            this.lblHint.Text = "注意：该正则表达式仅支持操作数(a~z、A~Z、0~9)和运算符( |  .  *  (  ) )，其他字符将被视为非法字符。输入样例：a(a|b)*、1a2(c" +
+    "|4)。";
             // 
             // LexerGeneratorForm
             // 

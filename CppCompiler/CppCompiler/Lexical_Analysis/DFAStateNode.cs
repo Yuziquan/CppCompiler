@@ -50,6 +50,7 @@ namespace CppCompiler
             set { content = value; }
         }
 
+
         /// <summary>
         /// 将当前节点与另一个节点连接
         /// </summary>
@@ -71,6 +72,7 @@ namespace CppCompiler
         {
             content.AddRange(nodeList);
         }
+
 
         /// <summary>
         /// 判断当前的DFA状态节点是否等价于另一个NFA状态节点集
