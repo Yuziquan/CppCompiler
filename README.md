@@ -17,7 +17,6 @@
 
 ![1](https://github.com/Yuziquan/CppCompiler/blob/master/Screenshots/1.png)
 
-
 ***
 
 #### 2. 词法分析界面
@@ -39,7 +38,7 @@
 <br/>
 <br/>
 
-![5](https://github.com/Yuziquan/CppCompiler/blob/master/Screenshots/5.png)4
+![5](https://github.com/Yuziquan/CppCompiler/blob/master/Screenshots/5.png)
 
 <br/>
 <br/>
