@@ -31,7 +31,7 @@
 
 
 ***
-#### 3. 词法分析器生成器界面
+#### 3. 词法分析器生成器界面（类似flex的功能）
 
 ![4](https://github.com/Yuziquan/CppCompiler/blob/master/Screenshots/4.png)
 
@@ -96,3 +96,18 @@
 
 **V2.0.0**
 
+***
+
+### 五、其他资料
+
+#### 1、玩转flex
+> 想简单体验一下词法分析器生成器的朋友，可以使用flex~
+* flex下载地址：http://flex.sourceforge.net/
+* flex 的Github主页地址：https://github.com/westes/flex
+* 相关教程（自己看过，觉得不错的教程~）：
+  * https://blog.csdn.net/pfl_327/article/details/83040263
+  * https://blog.csdn.net/pfl_327/article/details/83148604
+  * https://blog.csdn.net/wlym123/article/details/54426422
+  * https://blog.csdn.net/pfl_327/article/details/83148040
+  * https://blog.csdn.net/pfl_327/article/details/83216453
+  * https://blog.csdn.net/kongxiaoming2333/article/details/24040031
