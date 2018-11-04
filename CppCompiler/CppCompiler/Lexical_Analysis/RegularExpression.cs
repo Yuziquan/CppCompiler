@@ -152,7 +152,7 @@ namespace CppCompiler.Lexical_Analysis
         /// <returns></returns>
         public static bool IsOperand(char c)
         {
-            Regex regex = new Regex("[a-zA-Z0-9]");
+            Regex regex = new Regex("[a-zA-Z0-9~]");
 
             if(regex.IsMatch(c + ""))
             {
