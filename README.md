@@ -15,35 +15,35 @@
 
 #### 1. 主菜单
 
-![1](https://github.com/Yuziquan/CppCompiler/blob/master/Screenshots/1.png)
+![1](Screenshots/1.png)
 
 ***
 
 #### 2. 词法分析界面
 
-![2](https://github.com/Yuziquan/CppCompiler/blob/master/Screenshots/2.png)
+![2](Screenshots/2.png)
 
 <br/>
 <br/>
 
-![3](https://github.com/Yuziquan/CppCompiler/blob/master/Screenshots/3.png)
+![3](Screenshots/3.png)
 
 
 
 ***
 #### 3. 词法分析器生成器界面（类似flex的功能）
 
-![4](https://github.com/Yuziquan/CppCompiler/blob/master/Screenshots/4.png)
+![4](Screenshots/4.png)
 
 <br/>
 <br/>
 
-![5](https://github.com/Yuziquan/CppCompiler/blob/master/Screenshots/5.png)
+![5](Screenshots/5.png)
 
 <br/>
 <br/>
 
-![6](https://github.com/Yuziquan/CppCompiler/blob/master/Screenshots/6.png)
+![6](Screenshots/6.png)
 
 ***
 #### 4. TINY扩充语言的语法分析
@@ -61,7 +61,7 @@
 
 #### 6. 关于
 
-![about](https://github.com/Yuziquan/CppCompiler/blob/master/Screenshots/about.png)
+![about](Screenshots/about.png)
 
 
 
