@@ -1,0 +1,16 @@
+﻿  main.c
+e:\c++_projects\tinysyntaxanalysis\tinysyntaxanalysis\main.c(39): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\stdio.h(208): note: see declaration of 'fopen'
+e:\c++_projects\tinysyntaxanalysis\tinysyntaxanalysis\main.c(47): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\stdio.h(208): note: see declaration of 'fopen'
+  parse.c
+  scan.c
+e:\c++_projects\tinysyntaxanalysis\tinysyntaxanalysis\scan.c(43): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+  util.c
+e:\c++_projects\tinysyntaxanalysis\tinysyntaxanalysis\util.c(49): warning C4778: 'fprintf' : unterminated format string '% \n'
+e:\c++_projects\tinysyntaxanalysis\tinysyntaxanalysis\util.c(115): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+e:\c++_projects\tinysyntaxanalysis\tinysyntaxanalysis\util.c(119): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\string.h(133): note: see declaration of 'strcpy'
+  Generating Code...
+     Creating library E:\C++_projects\TinySyntaxAnalysis\x64\Debug\TinySyntaxAnalysis.lib and object E:\C++_projects\TinySyntaxAnalysis\x64\Debug\TinySyntaxAnalysis.exp
+  TinySyntaxAnalysis.vcxproj -> E:\C++_projects\TinySyntaxAnalysis\x64\Debug\TinySyntaxAnalysis.dll

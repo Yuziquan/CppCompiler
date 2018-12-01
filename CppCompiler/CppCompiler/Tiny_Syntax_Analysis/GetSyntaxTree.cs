@@ -9,7 +9,6 @@ namespace CppCompiler.Tiny_Syntax_Analysis
     public static class GetSyntaxTree
     {
         [DllImport("TinySyntaxAnalysis.Dll", CallingConvention = CallingConvention.Cdecl)]
-
         public static extern void getSyntaxTree(char[] sourceFileFullName, Char[] savedFileFullName);
     }
 }
