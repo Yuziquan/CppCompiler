@@ -23,17 +23,23 @@ namespace CppCompiler
         }
 
   
+        private void btnLexerGenerator_Click(object sender, EventArgs e)
+        {
+            LexerGeneratorForm lexerGeneratorForm = new LexerGeneratorForm();
+            lexerGeneratorForm.Show();
+        }
+
+        private void btnTinySyntaxAnalysis_Click(object sender, EventArgs e)
+        {
+            TinySyntaxAnalysisForm tinySyntaxAnalysisForm = new TinySyntaxAnalysisForm();
+            tinySyntaxAnalysisForm.Show();
+        }
+
 
         private void btnAbout_Click(object sender, EventArgs e)
         {
             AboutForm aboutForm = new AboutForm();
             aboutForm.Show();
-        }
-
-        private void btnLexerGenerator_Click(object sender, EventArgs e)
-        {
-            LexerGeneratorForm lexerGeneratorForm = new LexerGeneratorForm();
-            lexerGeneratorForm.Show();
         }
     }
 }

@@ -33,6 +33,7 @@
             this.btnLexicalAnalysis = new System.Windows.Forms.Button();
             this.btnAbout = new System.Windows.Forms.Button();
             this.btnLexerGenerator = new System.Windows.Forms.Button();
+            this.btnTinySyntaxAnalysis = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblApplicationName
@@ -60,7 +61,7 @@
             // btnAbout
             // 
             this.btnAbout.BackColor = System.Drawing.SystemColors.Control;
-            this.btnAbout.Location = new System.Drawing.Point(232, 251);
+            this.btnAbout.Location = new System.Drawing.Point(236, 269);
             this.btnAbout.Name = "btnAbout";
             this.btnAbout.Size = new System.Drawing.Size(144, 29);
             this.btnAbout.TabIndex = 2;
@@ -80,12 +81,25 @@
             this.btnLexerGenerator.UseVisualStyleBackColor = false;
             this.btnLexerGenerator.Click += new System.EventHandler(this.btnLexerGenerator_Click);
             // 
+            // btnTinySyntaxAnalysis
+            // 
+            this.btnTinySyntaxAnalysis.BackColor = System.Drawing.SystemColors.Control;
+            this.btnTinySyntaxAnalysis.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnTinySyntaxAnalysis.Location = new System.Drawing.Point(180, 177);
+            this.btnTinySyntaxAnalysis.Name = "btnTinySyntaxAnalysis";
+            this.btnTinySyntaxAnalysis.Size = new System.Drawing.Size(266, 28);
+            this.btnTinySyntaxAnalysis.TabIndex = 4;
+            this.btnTinySyntaxAnalysis.Text = "TINY扩充语言的语法分析";
+            this.btnTinySyntaxAnalysis.UseVisualStyleBackColor = false;
+            this.btnTinySyntaxAnalysis.Click += new System.EventHandler(this.btnTinySyntaxAnalysis_Click);
+            // 
             // MainMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.ClientSize = new System.Drawing.Size(618, 310);
+            this.Controls.Add(this.btnTinySyntaxAnalysis);
             this.Controls.Add(this.btnLexerGenerator);
             this.Controls.Add(this.btnAbout);
             this.Controls.Add(this.btnLexicalAnalysis);
@@ -109,6 +123,7 @@
         private System.Windows.Forms.Button btnLexicalAnalysis;
         private System.Windows.Forms.Button btnAbout;
         private System.Windows.Forms.Button btnLexerGenerator;
+        private System.Windows.Forms.Button btnTinySyntaxAnalysis;
     }
 }
 
