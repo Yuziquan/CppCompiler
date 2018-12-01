@@ -104,13 +104,13 @@
   * 函数接口如下(位于[main.c](https://github.com/Yuziquan/CppCompiler/blob/master/TINY%E6%89%A9%E5%85%85%E8%AF%AD%E8%A8%80%E7%9A%84%E8%AF%AD%E6%B3%95%E6%A0%91%E7%94%9F%E6%88%90%EF%BC%88DLL%E9%A1%B9%E7%9B%AE%EF%BC%89/DLL%E9%A1%B9%E7%9B%AE/TinySyntaxAnalysis/TinySyntaxAnalysis/main.c)文件)：
 
     ```c
-      /*
-       读入全路径为sourceFileFullName的源代码文件，将扫描得到的语法树打印到全路径为savedFileFullName的文件中
-      */
+    /*
+      读入全路径为sourceFileFullName的源代码文件，将扫描得到的语法树打印到全路径为savedFileFullName的文件中
+    */
     extern __declspec(dllexport) void getSyntaxTree(char* sourceFileFullName, char* savedFileFullName);
     ```
 
-  * 该项目生成的ddl文件的所在位置：[TinySyntaxAnalysis.dll](https://github.com/Yuziquan/CppCompiler/blob/master/TINY%E6%89%A9%E5%85%85%E8%AF%AD%E8%A8%80%E7%9A%84%E8%AF%AD%E6%B3%95%E6%A0%91%E7%94%9F%E6%88%90%EF%BC%88DLL%E9%A1%B9%E7%9B%AE%EF%BC%89/DLL%E9%A1%B9%E7%9B%AE/TinySyntaxAnalysis/x64/Debug/TinySyntaxAnalysis.dll)；
+  * 该项目生成的dll文件的所在位置：[TinySyntaxAnalysis.dll](https://github.com/Yuziquan/CppCompiler/blob/master/TINY%E6%89%A9%E5%85%85%E8%AF%AD%E8%A8%80%E7%9A%84%E8%AF%AD%E6%B3%95%E6%A0%91%E7%94%9F%E6%88%90%EF%BC%88DLL%E9%A1%B9%E7%9B%AE%EF%BC%89/DLL%E9%A1%B9%E7%9B%AE/TinySyntaxAnalysis/x64/Debug/TinySyntaxAnalysis.dll)；
 
   * 项目[CppCompiler](https://github.com/Yuziquan/CppCompiler)使用该dll文件时，放置该dll文件的位置：[TinySyntaxAnalysis.dll](https://github.com/Yuziquan/CppCompiler/blob/master/CppCompiler/CppCompiler/bin/Debug/TinySyntaxAnalysis.dll)
 
