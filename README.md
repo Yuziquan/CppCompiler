@@ -97,6 +97,22 @@
 
 * 完成TINY扩充语言的语法分析模块；
 
+* 将”TINY扩充语言的语法树的生成过程“抽象出一个函数接口`getSyntaxTree`，并打包成一个dll文件，如果其他工程需要使用到“TINY扩充语言的语法树的生成”，则可以直接导入该dll文件并引用函数接口`getSyntaxTree`即可。具体细节如下：
+
+  * 封装该dll文件的项目名为`TinySyntaxAnalysis` ;
+
+
+  * 函数接口如下(位于`main.c`文件)：
+
+  ```c
+  /*
+   读入全路径为sourceFileFullName的源代码文件，将扫描得到的语法树打印到全路径为savedFileFullName的文件中
+  */
+  extern __declspec(dllexport) void getSyntaxTree(char* sourceFileFullName, char* savedFileFullName);
+  ```
+
+  ​
+
 ***
 
 ### 四、当前版本
