@@ -1,4 +1,4 @@
-TINY COMPILATION: tiny_source_code.tiny
+TINY COMPILATION: E:\ForSample.tiny
 
 Syntax tree:
 

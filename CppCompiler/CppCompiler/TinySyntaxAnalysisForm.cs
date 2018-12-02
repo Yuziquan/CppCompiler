@@ -110,11 +110,18 @@ namespace CppCompiler
             String sourceFileName = "tiny_source_code.tiny";
             String syntaxTreeFileName = "syntax_tree.txt";
 
-            String tinySourceCode = rtxtSourceFileContent.Text.ToString();
-
-            StreamWriter streamWriter = new StreamWriter(sourceFileName);
-            streamWriter.Write(tinySourceCode);
-            streamWriter.Close();
+            if(!txtFilePath.Text.ToString().Equals(""))
+            {
+                sourceFileName = txtFilePath.Text.ToString();
+            }
+            else
+            {
+                String tinySourceCode = rtxtSourceFileContent.Text.ToString();
+                StreamWriter streamWriter = new StreamWriter(sourceFileName);
+                streamWriter.Write(tinySourceCode);
+                streamWriter.Close();
+            }
+          
 
             GetSyntaxTree.getSyntaxTree(sourceFileName.ToCharArray(), syntaxTreeFileName.ToCharArray());
 

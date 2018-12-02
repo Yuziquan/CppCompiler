@@ -97,7 +97,7 @@
 
 * 完成TINY扩充语言的语法分析模块；
 
-* 将”TINY扩充语言的语法树的生成过程“抽象出一个函数接口`getSyntaxTree`，并打包成一个dll文件，如果其他工程需要使用到“TINY扩充语言的语法树的生成”，则可以直接导入该dll文件并引用函数接口`getSyntaxTree`即可。具体细节如下：
+* 将“TINY扩充语言的语法树的生成过程”抽象出一个函数接口`getSyntaxTree`，并打包成一个dll文件，如果其他工程需要使用到“TINY扩充语言的语法树的生成”，则可以直接导入该dll文件并引用函数接口`getSyntaxTree`即可。具体细节如下：
 
   * 封装该dll文件的项目名为 [TinySyntaxAnalysis](https://github.com/Yuziquan/CppCompiler/tree/master/TINY%E6%89%A9%E5%85%85%E8%AF%AD%E8%A8%80%E7%9A%84%E8%AF%AD%E6%B3%95%E6%A0%91%E7%94%9F%E6%88%90%EF%BC%88DLL%E9%A1%B9%E7%9B%AE%EF%BC%89/DLL%E9%A1%B9%E7%9B%AE/TinySyntaxAnalysis) ；
 
