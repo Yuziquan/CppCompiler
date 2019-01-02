@@ -163,27 +163,27 @@
             this.lblNFA.AutoSize = true;
             this.lblNFA.Location = new System.Drawing.Point(12, 131);
             this.lblNFA.Name = "lblNFA";
-            this.lblNFA.Size = new System.Drawing.Size(196, 17);
+            this.lblNFA.Size = new System.Drawing.Size(104, 17);
             this.lblNFA.TabIndex = 4;
-            this.lblNFA.Text = "NFA状态转换表(列宽可手动调整)：";
+            this.lblNFA.Text = "NFA状态转换表：";
             // 
             // lblDFA
             // 
             this.lblDFA.AutoSize = true;
             this.lblDFA.Location = new System.Drawing.Point(428, 131);
             this.lblDFA.Name = "lblDFA";
-            this.lblDFA.Size = new System.Drawing.Size(195, 17);
+            this.lblDFA.Size = new System.Drawing.Size(103, 17);
             this.lblDFA.TabIndex = 5;
-            this.lblDFA.Text = "DFA状态转换表(列宽可手动调整)：";
+            this.lblDFA.Text = "DFA状态转换表：";
             // 
             // lblMinDFA
             // 
             this.lblMinDFA.AutoSize = true;
             this.lblMinDFA.Location = new System.Drawing.Point(886, 131);
             this.lblMinDFA.Name = "lblMinDFA";
-            this.lblMinDFA.Size = new System.Drawing.Size(231, 17);
+            this.lblMinDFA.Size = new System.Drawing.Size(139, 17);
             this.lblMinDFA.TabIndex = 6;
-            this.lblMinDFA.Text = "最小化DFA状态转换表(列宽可手动调整)：";
+            this.lblMinDFA.Text = "最小化DFA状态转换表：";
             // 
             // txtRegex
             // 

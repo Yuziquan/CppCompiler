@@ -38,7 +38,7 @@
             this.txtFilePath = new System.Windows.Forms.TextBox();
             this.lblSourceFile = new System.Windows.Forms.Label();
             this.btnSelect = new System.Windows.Forms.Button();
-            this.lblEditView = new System.Windows.Forms.Label();
+            this.lblEditTinySourceCode = new System.Windows.Forms.Label();
             this.lblSyntaxTree = new System.Windows.Forms.Label();
             this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -124,14 +124,14 @@
             this.btnSelect.UseVisualStyleBackColor = true;
             this.btnSelect.Click += new System.EventHandler(this.btnSelect_Click);
             // 
-            // lblEditView
+            // lblEditTinySourceCode
             // 
-            this.lblEditView.AutoSize = true;
-            this.lblEditView.Location = new System.Drawing.Point(12, 128);
-            this.lblEditView.Name = "lblEditView";
-            this.lblEditView.Size = new System.Drawing.Size(156, 17);
-            this.lblEditView.TabIndex = 6;
-            this.lblEditView.Text = "编辑/查看Tiny源代码文件：";
+            this.lblEditTinySourceCode.AutoSize = true;
+            this.lblEditTinySourceCode.Location = new System.Drawing.Point(12, 128);
+            this.lblEditTinySourceCode.Name = "lblEditTinySourceCode";
+            this.lblEditTinySourceCode.Size = new System.Drawing.Size(156, 17);
+            this.lblEditTinySourceCode.TabIndex = 6;
+            this.lblEditTinySourceCode.Text = "编辑/查看Tiny源代码文件：";
             // 
             // lblSyntaxTree
             // 
@@ -148,7 +148,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(933, 637);
             this.Controls.Add(this.lblSyntaxTree);
-            this.Controls.Add(this.lblEditView);
+            this.Controls.Add(this.lblEditTinySourceCode);
             this.Controls.Add(this.btnSelect);
             this.Controls.Add(this.lblSourceFile);
             this.Controls.Add(this.txtFilePath);
@@ -181,7 +181,7 @@
         private System.Windows.Forms.TextBox txtFilePath;
         private System.Windows.Forms.Label lblSourceFile;
         private System.Windows.Forms.Button btnSelect;
-        private System.Windows.Forms.Label lblEditView;
+        private System.Windows.Forms.Label lblEditTinySourceCode;
         private System.Windows.Forms.Label lblSyntaxTree;
     }
 }

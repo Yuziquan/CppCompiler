@@ -34,6 +34,7 @@
             this.btnAbout = new System.Windows.Forms.Button();
             this.btnLexerGenerator = new System.Windows.Forms.Button();
             this.btnTinySyntaxAnalysis = new System.Windows.Forms.Button();
+            this.btnLL1Analysis = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblApplicationName
@@ -61,7 +62,7 @@
             // btnAbout
             // 
             this.btnAbout.BackColor = System.Drawing.SystemColors.Control;
-            this.btnAbout.Location = new System.Drawing.Point(236, 269);
+            this.btnAbout.Location = new System.Drawing.Point(236, 273);
             this.btnAbout.Name = "btnAbout";
             this.btnAbout.Size = new System.Drawing.Size(144, 29);
             this.btnAbout.TabIndex = 2;
@@ -93,12 +94,25 @@
             this.btnTinySyntaxAnalysis.UseVisualStyleBackColor = false;
             this.btnTinySyntaxAnalysis.Click += new System.EventHandler(this.btnTinySyntaxAnalysis_Click);
             // 
+            // btnLL1Analysis
+            // 
+            this.btnLL1Analysis.BackColor = System.Drawing.SystemColors.Control;
+            this.btnLL1Analysis.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnLL1Analysis.Location = new System.Drawing.Point(180, 229);
+            this.btnLL1Analysis.Name = "btnLL1Analysis";
+            this.btnLL1Analysis.Size = new System.Drawing.Size(266, 28);
+            this.btnLL1Analysis.TabIndex = 5;
+            this.btnLL1Analysis.Text = "LL(1)分析器";
+            this.btnLL1Analysis.UseVisualStyleBackColor = false;
+            this.btnLL1Analysis.Click += new System.EventHandler(this.btnLL1Analysis_Click);
+            // 
             // MainMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.ClientSize = new System.Drawing.Size(618, 310);
+            this.Controls.Add(this.btnLL1Analysis);
             this.Controls.Add(this.btnTinySyntaxAnalysis);
             this.Controls.Add(this.btnLexerGenerator);
             this.Controls.Add(this.btnAbout);
@@ -124,6 +138,7 @@
         private System.Windows.Forms.Button btnAbout;
         private System.Windows.Forms.Button btnLexerGenerator;
         private System.Windows.Forms.Button btnTinySyntaxAnalysis;
+        private System.Windows.Forms.Button btnLL1Analysis;
     }
 }
 

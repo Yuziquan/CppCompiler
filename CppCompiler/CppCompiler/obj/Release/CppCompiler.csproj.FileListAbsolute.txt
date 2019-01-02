@@ -22,3 +22,4 @@ E:\Codes\GitHub\CppCompiler\CppCompiler\CppCompiler\obj\Release\CppCompiler.cspr
 E:\Codes\GitHub\CppCompiler\CppCompiler\CppCompiler\obj\Release\CppCompiler.csproj.CoreCompileInputs.cache
 E:\Codes\GitHub\CppCompiler\CppCompiler\CppCompiler\obj\Release\CppCompiler.exe
 E:\Codes\GitHub\CppCompiler\CppCompiler\CppCompiler\obj\Release\CppCompiler.pdb
+E:\Codes\GitHub\CppCompiler\CppCompiler\CppCompiler\obj\Release\CppCompiler.TinySyntaxAnalysisForm.resources

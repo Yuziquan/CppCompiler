@@ -49,57 +49,76 @@
     <Compile Include="AboutForm.Designer.cs">
       <DependentUpon>AboutForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="LexerForm.cs">
+    <Compile Include="Lexer_Generator\LexerForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="LexerForm.Designer.cs">
+    <Compile Include="Lexer_Generator\LexerForm.Designer.cs">
       <DependentUpon>LexerForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="LexerGeneratorForm.cs">
+    <Compile Include="Lexer_Generator\LexerGeneratorForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="LexerGeneratorForm.Designer.cs">
+    <Compile Include="Lexer_Generator\LexerGeneratorForm.Designer.cs">
       <DependentUpon>LexerGeneratorForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Lexical_Analysis\DFA.cs" />
-    <Compile Include="Lexical_Analysis\DFAStateNode.cs" />
-    <Compile Include="Lexical_Analysis\Edge.cs" />
-    <Compile Include="Lexical_Analysis\Lexer.cs" />
-    <Compile Include="Lexical_Analysis\NFA.cs" />
-    <Compile Include="Lexical_Analysis\Node.cs" />
-    <Compile Include="Lexical_Analysis\RegularExpression.cs" />
-    <Compile Include="LexicalAnalysisForm.cs">
+    <Compile Include="Lexer_Generator\DFA.cs" />
+    <Compile Include="Lexer_Generator\DFAStateNode.cs" />
+    <Compile Include="Lexer_Generator\Edge.cs" />
+    <Compile Include="Lexer_Generator\Lexer.cs" />
+    <Compile Include="Lexer_Generator\NFA.cs" />
+    <Compile Include="Lexer_Generator\Node.cs" />
+    <Compile Include="Lexer_Generator\RegularExpression.cs" />
+    <Compile Include="LL1_Analysis\InputSentenceForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="LexicalAnalysisForm.Designer.cs">
+    <Compile Include="LL1_Analysis\InputSentenceForm.Designer.cs">
+      <DependentUpon>InputSentenceForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LL1_Analysis\LL1AnalysisForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LL1_Analysis\LL1AnalysisForm.Designer.cs">
+      <DependentUpon>LL1AnalysisForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lexical_Analysis\LexicalAnalysisForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lexical_Analysis\LexicalAnalysisForm.Designer.cs">
       <DependentUpon>LexicalAnalysisForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="LL1_Analysis\LL1Helper.cs" />
     <Compile Include="MainMenu.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="MainMenu.Designer.cs">
       <DependentUpon>MainMenu.cs</DependentUpon>
     </Compile>
-    <Compile Include="Lexical_Analysis\NFAStateNode.cs" />
+    <Compile Include="Lexer_Generator\NFAStateNode.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="TinySyntaxAnalysisForm.cs">
+    <Compile Include="Tiny_Syntax_Analysis\TinySyntaxAnalysisForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="TinySyntaxAnalysisForm.Designer.cs">
+    <Compile Include="Tiny_Syntax_Analysis\TinySyntaxAnalysisForm.Designer.cs">
       <DependentUpon>TinySyntaxAnalysisForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Tiny_Syntax_Analysis\GetSyntaxTree.cs" />
     <EmbeddedResource Include="AboutForm.resx">
       <DependentUpon>AboutForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="LexerForm.resx">
+    <EmbeddedResource Include="Lexer_Generator\LexerForm.resx">
       <DependentUpon>LexerForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="LexerGeneratorForm.resx">
+    <EmbeddedResource Include="Lexer_Generator\LexerGeneratorForm.resx">
       <DependentUpon>LexerGeneratorForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="LexicalAnalysisForm.resx">
+    <EmbeddedResource Include="LL1_Analysis\InputSentenceForm.resx">
+      <DependentUpon>InputSentenceForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LL1_Analysis\LL1AnalysisForm.resx">
+      <DependentUpon>LL1AnalysisForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lexical_Analysis\LexicalAnalysisForm.resx">
       <DependentUpon>LexicalAnalysisForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainMenu.resx">
@@ -114,7 +133,7 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="TinySyntaxAnalysisForm.resx">
+    <EmbeddedResource Include="Tiny_Syntax_Analysis\TinySyntaxAnalysisForm.resx">
       <DependentUpon>TinySyntaxAnalysisForm.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
@@ -126,6 +145,9 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Tiny_Syntax_Analysis\TinySyntaxAnalysis.dll" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

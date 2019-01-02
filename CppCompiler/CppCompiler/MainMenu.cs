@@ -36,10 +36,17 @@ namespace CppCompiler
         }
 
 
+        private void btnLL1Analysis_Click(object sender, EventArgs e)
+        {
+            LL1AnalysisForm lL1AnalysisForm = new LL1AnalysisForm();
+            lL1AnalysisForm.Show();
+        }
+
         private void btnAbout_Click(object sender, EventArgs e)
         {
             AboutForm aboutForm = new AboutForm();
             aboutForm.Show();
         }
+
     }
 }
