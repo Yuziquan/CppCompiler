@@ -1443,6 +1443,12 @@ namespace CppCompiler
                 topOfParsingStack = parsingStack.Peek();
             }
 
+            if(!sentence.Substring(curIndexOfSentence).Equals("$"))
+            {
+                MessageBox.Show("输入语句不符合当前文法！", "错误", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
+                return;
+            }
+
             CreateARow(parsingTable, parsingStack, sentence.Substring(curIndexOfSentence), "接受");
 
 
