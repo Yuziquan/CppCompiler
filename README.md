@@ -1,6 +1,6 @@
 ## CppCompiler
 
-[![CppCompiler](https://img.shields.io/badge/CppCompiler-v1.0.2-green.svg)](https://github.com/Yuziquan/CppCompiler)
+[![CppCompiler](https://img.shields.io/badge/CppCompiler-v4.0.0 -green.svg)](https://github.com/Yuziquan/CppCompiler)
 [![license](https://img.shields.io/packagist/l/doctrine/orm.svg)](https://github.com/Yuziquan/CppCompiler/blob/master/LICENSE)
 
 ### 一、项目功能
