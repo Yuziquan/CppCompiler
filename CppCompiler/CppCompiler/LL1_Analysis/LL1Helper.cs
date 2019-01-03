@@ -190,8 +190,6 @@ namespace CppCompiler
             }
 
             startSymbol = grammarRuleList[0][0];
-            followSetOfNonterminalSymbol.Add(startSymbol, new List<String>() { "$" }); // 语句输入的结束符默认为"$"
-
             isPreproccessed = true;
         }
 
@@ -796,7 +794,7 @@ namespace CppCompiler
                     {
                         String production = grammarRuleList[i][j];
 
-                        if (production.Equals("ε"))
+                        if (production.Equals("ε") && !firstSet.Contains("ε"))
                         {
                             firstSet.Add("ε");
                             if (!firstSetOfSymbol.ContainsKey("ε"))
@@ -936,6 +934,11 @@ namespace CppCompiler
         {
             List<String> followSetOfA = followSetOfNonterminalSymbol.ContainsKey(A) ? followSetOfNonterminalSymbol[A] : new List<string>();
 
+            if(A.Equals(startSymbol) && !followSetOfA.Contains("$"))
+            {
+                followSetOfA.Add("$");
+            }
+
             for (int i = 0; i < grammarRuleList.Count; i++) // 查找所有文法规则的产生式，确定A后面的终结符
             {
                 for (int j = 1; j < grammarRuleList[i].Count; j++)
@@ -951,7 +954,7 @@ namespace CppCompiler
                         while (k < production.Length)
                         {
                             if (production[k] == A[0] && k + len < production.Length && production.Substring(k, len).Equals(A)
-                                &&!IsNonterminalSymbol(production[k + len]))
+                                &&!IsNonterminalSymbol(production[k + len]) && !followSetOfA.Contains(production[k + len] + ""))
                             {
                                 followSetOfA.Add(production[k + len] + "");
                                 k += len;
@@ -966,7 +969,7 @@ namespace CppCompiler
                     {
                         while (k < production.Length)
                         {
-                            if (production[k] == A[0] && k + 1 < production.Length && !IsNonterminalSymbol(production[k + 1]))
+                            if (production[k] == A[0] && k + 1 < production.Length && !IsNonterminalSymbol(production[k + 1]) && !followSetOfA.Contains(production[k + 1] + ""))
                             {
                                 followSetOfA.Add(production[k + 1] + "");
                             }
@@ -1053,15 +1056,15 @@ namespace CppCompiler
                                                 followSetOfB.Add(symbol);
                                             }
                                         }
+                                    }
 
-                                        if (followSetOfNonterminalSymbol.ContainsKey(B))
-                                        {
-                                            followSetOfNonterminalSymbol[B] = followSetOfB;
-                                        }
-                                        else
-                                        {
-                                            followSetOfNonterminalSymbol.Add(B, followSetOfB);
-                                        }
+                                    if (followSetOfNonterminalSymbol.ContainsKey(B))
+                                    {
+                                        followSetOfNonterminalSymbol[B] = followSetOfB;
+                                    }
+                                    else
+                                    {
+                                        followSetOfNonterminalSymbol.Add(B, followSetOfB);
                                     }
                                 }
                             }
