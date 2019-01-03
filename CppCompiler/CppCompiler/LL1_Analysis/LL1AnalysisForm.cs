@@ -17,6 +17,7 @@ namespace CppCompiler
             InitializeComponent();
             lblHint.ForeColor = Color.Red;
             lblHint1.ForeColor = Color.Red;
+            LL1Helper.Reset();
         }
 
         private void tsbtnImportGrammarFile_Click(object sender, EventArgs e)

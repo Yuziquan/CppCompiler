@@ -35,3 +35,4 @@ E:\Codes\GitHub\CppCompiler\CppCompiler\CppCompiler\obj\Debug\CppCompiler.csproj
 E:\Codes\GitHub\CppCompiler\CppCompiler\CppCompiler\obj\Debug\CppCompiler.csproj.CoreCompileInputs.cache
 E:\Codes\GitHub\CppCompiler\CppCompiler\CppCompiler\obj\Debug\CppCompiler.exe
 E:\Codes\GitHub\CppCompiler\CppCompiler\CppCompiler\obj\Debug\CppCompiler.pdb
+E:\Codes\GitHub\CppCompiler\CppCompiler\CppCompiler\obj\Debug\CppCompiler.csprojAssemblyReference.cache
