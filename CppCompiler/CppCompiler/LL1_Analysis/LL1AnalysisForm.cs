@@ -15,6 +15,8 @@ namespace CppCompiler
         public LL1AnalysisForm()
         {
             InitializeComponent();
+            lblHint.ForeColor = Color.Red;
+            lblHint1.ForeColor = Color.Red;
         }
 
         private void tsbtnImportGrammarFile_Click(object sender, EventArgs e)

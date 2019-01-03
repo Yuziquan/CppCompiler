@@ -53,6 +53,8 @@
             this.lblLeftFactoring = new System.Windows.Forms.Label();
             this.lblParsingTable = new System.Windows.Forms.Label();
             this.btnInputEmptyString = new System.Windows.Forms.Button();
+            this.lblHint = new System.Windows.Forms.Label();
+            this.lblHint1 = new System.Windows.Forms.Label();
             this.toolStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvLL1ParsingTable)).BeginInit();
             this.SuspendLayout();
@@ -67,7 +69,7 @@
             // 
             // rtxtGrammar
             // 
-            this.rtxtGrammar.Location = new System.Drawing.Point(12, 71);
+            this.rtxtGrammar.Location = new System.Drawing.Point(12, 106);
             this.rtxtGrammar.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.rtxtGrammar.Name = "rtxtGrammar";
             this.rtxtGrammar.Size = new System.Drawing.Size(275, 229);
@@ -199,7 +201,7 @@
             // lblEditGrammar
             // 
             this.lblEditGrammar.AutoSize = true;
-            this.lblEditGrammar.Location = new System.Drawing.Point(4, 48);
+            this.lblEditGrammar.Location = new System.Drawing.Point(9, 82);
             this.lblEditGrammar.Name = "lblEditGrammar";
             this.lblEditGrammar.Size = new System.Drawing.Size(215, 17);
             this.lblEditGrammar.TabIndex = 3;
@@ -207,7 +209,7 @@
             // 
             // rtxtLeftRecursionRemoval
             // 
-            this.rtxtLeftRecursionRemoval.Location = new System.Drawing.Point(319, 71);
+            this.rtxtLeftRecursionRemoval.Location = new System.Drawing.Point(325, 106);
             this.rtxtLeftRecursionRemoval.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.rtxtLeftRecursionRemoval.Name = "rtxtLeftRecursionRemoval";
             this.rtxtLeftRecursionRemoval.ReadOnly = true;
@@ -224,17 +226,17 @@
             this.dgvLL1ParsingTable.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dgvLL1ParsingTable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvLL1ParsingTable.ColumnHeadersVisible = false;
-            this.dgvLL1ParsingTable.Location = new System.Drawing.Point(12, 336);
+            this.dgvLL1ParsingTable.Location = new System.Drawing.Point(12, 369);
             this.dgvLL1ParsingTable.Name = "dgvLL1ParsingTable";
             this.dgvLL1ParsingTable.ReadOnly = true;
             this.dgvLL1ParsingTable.RowHeadersVisible = false;
             this.dgvLL1ParsingTable.RowTemplate.Height = 23;
-            this.dgvLL1ParsingTable.Size = new System.Drawing.Size(906, 293);
+            this.dgvLL1ParsingTable.Size = new System.Drawing.Size(906, 260);
             this.dgvLL1ParsingTable.TabIndex = 5;
             // 
             // rtxtLeftFactoring
             // 
-            this.rtxtLeftFactoring.Location = new System.Drawing.Point(636, 71);
+            this.rtxtLeftFactoring.Location = new System.Drawing.Point(637, 104);
             this.rtxtLeftFactoring.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.rtxtLeftFactoring.Name = "rtxtLeftFactoring";
             this.rtxtLeftFactoring.ReadOnly = true;
@@ -245,7 +247,7 @@
             // lblLeftRecursionRemoval
             // 
             this.lblLeftRecursionRemoval.AutoSize = true;
-            this.lblLeftRecursionRemoval.Location = new System.Drawing.Point(322, 52);
+            this.lblLeftRecursionRemoval.Location = new System.Drawing.Point(322, 83);
             this.lblLeftRecursionRemoval.Name = "lblLeftRecursionRemoval";
             this.lblLeftRecursionRemoval.Size = new System.Drawing.Size(80, 17);
             this.lblLeftRecursionRemoval.TabIndex = 7;
@@ -254,7 +256,7 @@
             // lblLeftFactoring
             // 
             this.lblLeftFactoring.AutoSize = true;
-            this.lblLeftFactoring.Location = new System.Drawing.Point(634, 52);
+            this.lblLeftFactoring.Location = new System.Drawing.Point(634, 83);
             this.lblLeftFactoring.Name = "lblLeftFactoring";
             this.lblLeftFactoring.Size = new System.Drawing.Size(104, 17);
             this.lblLeftFactoring.TabIndex = 8;
@@ -263,7 +265,7 @@
             // lblParsingTable
             // 
             this.lblParsingTable.AutoSize = true;
-            this.lblParsingTable.Location = new System.Drawing.Point(14, 314);
+            this.lblParsingTable.Location = new System.Drawing.Point(14, 348);
             this.lblParsingTable.Name = "lblParsingTable";
             this.lblParsingTable.Size = new System.Drawing.Size(83, 17);
             this.lblParsingTable.TabIndex = 9;
@@ -271,7 +273,7 @@
             // 
             // btnInputEmptyString
             // 
-            this.btnInputEmptyString.Location = new System.Drawing.Point(216, 43);
+            this.btnInputEmptyString.Location = new System.Drawing.Point(230, 77);
             this.btnInputEmptyString.Name = "btnInputEmptyString";
             this.btnInputEmptyString.Size = new System.Drawing.Size(75, 24);
             this.btnInputEmptyString.TabIndex = 10;
@@ -279,11 +281,31 @@
             this.btnInputEmptyString.UseVisualStyleBackColor = true;
             this.btnInputEmptyString.Click += new System.EventHandler(this.btnInputEmptyString_Click);
             // 
+            // lblHint
+            // 
+            this.lblHint.AutoSize = true;
+            this.lblHint.Location = new System.Drawing.Point(9, 40);
+            this.lblHint.Name = "lblHint";
+            this.lblHint.Size = new System.Drawing.Size(385, 34);
+            this.lblHint.TabIndex = 11;
+            this.lblHint.Text = "1、文法规则样式例子：A->ab|cD；\r\n2、支持的文法表示：大/小写字母表示非/终结符，不支持阿拉伯数字；";
+            // 
+            // lblHint1
+            // 
+            this.lblHint1.AutoSize = true;
+            this.lblHint1.Location = new System.Drawing.Point(401, 44);
+            this.lblHint1.Name = "lblHint1";
+            this.lblHint1.Size = new System.Drawing.Size(273, 17);
+            this.lblHint1.TabIndex = 12;
+            this.lblHint1.Text = "3、目前导入文件中的ε会发生乱码，需手工修复；";
+            // 
             // LL1AnalysisForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(933, 637);
+            this.Controls.Add(this.lblHint1);
+            this.Controls.Add(this.lblHint);
             this.Controls.Add(this.dgvLL1ParsingTable);
             this.Controls.Add(this.btnInputEmptyString);
             this.Controls.Add(this.lblParsingTable);
@@ -337,5 +359,7 @@
         private System.Windows.Forms.Label lblLeftFactoring;
         private System.Windows.Forms.Label lblParsingTable;
         private System.Windows.Forms.Button btnInputEmptyString;
+        private System.Windows.Forms.Label lblHint;
+        private System.Windows.Forms.Label lblHint1;
     }
 }

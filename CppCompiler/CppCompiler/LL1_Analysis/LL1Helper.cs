@@ -27,7 +27,6 @@ namespace CppCompiler
         /// </summary>
         public static string[,] table;
 
-
         /// <summary>
         /// 文法规则列表
         /// </summary>
@@ -43,7 +42,6 @@ namespace CppCompiler
         /// </summary>
         public static List<List<String>> copy1OfGrammarRuleList = new List<List<string>>();
 
-
         /// <summary>
         /// 文法规则列表的一个副本
         /// </summary>
@@ -53,7 +51,6 @@ namespace CppCompiler
         /// 标记能/不能推出ε的非终结符
         /// </summary>
         public static Dictionary<String, bool> nonterminalSymbolRelEmptyStr = new Dictionary<String, bool>();
-
 
         /// <summary>
         /// 保存文法规则中非终结符/终结符的FIRST集合
@@ -70,12 +67,10 @@ namespace CppCompiler
         /// </summary>
         public static Dictionary<String, List<String>> followSetOfNonterminalSymbol = new Dictionary<String, List<String>>();
 
-
         /// <summary>
         /// 文法规则的开始符号（默认取文法规则列表的第一条文法的左部非终结符）
         /// </summary>
         public static String startSymbol = "";
-
 
         /// <summary>
         /// 文法规则列表是否存在左递归
@@ -97,11 +92,11 @@ namespace CppCompiler
         /// </summary>
         public static bool isChecked = false;
 
-
         /// <summary>
         /// LL(1)分析表是否已经生成
         /// </summary>
         public static bool isTableGenerated = false;
+
 
 
         /// <summary>
@@ -507,7 +502,6 @@ namespace CppCompiler
         }
 
 
-
         /// <summary>
         /// 检查文法规则
         /// </summary>
@@ -575,6 +569,7 @@ namespace CppCompiler
             existedLeftRecursion = false;
         }
 
+
         /// <summary>
         /// 消除左公共因子，供GUI界面调用的接口
         /// </summary>
@@ -625,7 +620,7 @@ namespace CppCompiler
 
 
         /// <summary>
-        /// 1、求出能推出ε的非终结符（非递归求法），这里权当一次锻炼，该函数不运用于LL(1)分析
+        /// 1、求出能推出ε的非终结符（非递归求法），这里权当一次锻炼，该函数不运用于LL(1)分析。
         /// 2、递归求法：使用递归方式求所有非终结符的FIRST集，若某一个非终结符A的FIRST集含有ε，即FIRST(A)={ε,...},则A能推出ε！
         /// 3、"2"中的结论出自《编译原理及实践》P126 中的一个定理：当且仅当FIRST(A)包含ε时，非终结符A为可空的。
         /// </summary>
@@ -934,7 +929,7 @@ namespace CppCompiler
 
 
         /// <summary>
-        /// 计算文法规则左部非终结符的FOLLOW集合(这里求FOLLOW(A))
+        /// 计算文法规则左部非终结符的FOLLOW集合(这里求FOLLOW(A))，目前有些bug，后期有空修复
         /// </summary>
         /// <param name="A">非终结符A</param>
         public static void GetFollowSetOfNonterminalSymbol(String A)
@@ -1078,7 +1073,6 @@ namespace CppCompiler
         }
 
 
-
         /// <summary>
         /// 准备好LL(1)分析时要使用的FIRST、FOLLOW集
         /// </summary>
@@ -1103,6 +1097,7 @@ namespace CppCompiler
                 GetFollowSetOfNonterminalSymbol(grammarRuleList[i][0]);
             }
         }
+
 
         /// <summary>
         /// 获取文法中所有的非终结符和终结符
@@ -1163,7 +1158,6 @@ namespace CppCompiler
             }
             return true;
         }
-
 
 
         /// <summary>
@@ -1439,9 +1433,8 @@ namespace CppCompiler
                 }
                 else
                 {
-                    //MessageBox.Show("输入语句不符合当前文法！", "错误", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
-                    //return;
-                    break;
+                    MessageBox.Show("输入语句不符合当前文法！", "错误", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
+                    return;
                 }
 
                 topOfParsingStack = parsingStack.Peek();
