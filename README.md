@@ -1,7 +1,13 @@
 ## CppCompiler
 
-[![CppCompiler](https://img.shields.io/badge/CppCompiler-v4.0.0-green.svg)](https://github.com/Yuziquan/CppCompiler)
+[![CppCompiler](https://img.shields.io/badge/CppCompiler-v4.0.1-green.svg)](https://github.com/Yuziquan/CppCompiler)
 [![license](https://img.shields.io/packagist/l/doctrine/orm.svg)](https://github.com/Yuziquan/CppCompiler/blob/master/LICENSE)
+
+
+
+### 本程序还存在一些小bug，使用前请先查看"版本迭代&说明"!
+
+<br/>
 
 ### 一、项目功能
 
@@ -70,6 +76,8 @@
 <br/>
 <br/>
 
+**去掉 L->ε 后，文法无二义性**
+
 ![10](Screenshots/10.png)
 
 <br/>
@@ -93,6 +101,12 @@
 
 
 ![14](Screenshots/14.png)
+
+<br/>
+<br/>
+
+
+![15](Screenshots/15.png)
 
 <br/>
 
@@ -161,13 +175,19 @@
 * 完成LL(1)分析器模块；
 * 实现了简单易用的用户交互逻辑，基本做到了用户的傻瓜式使用；
 * 实现了完善的用户提醒机制，有效防止用户的错误操作；
-* 通过后期大量的文本规则样本测试后发现，还有一些隐藏的bug，其中包括“求非终结符的FOLLOW集的bug”，欢迎有意者Pull Request一同修复。
+* 通过后期大量的文本规则样本测试后发现，还有一些隐藏的bug，其中包括“求非终结符的FOLLOW集不完整“的bug；
+
+***
+#### 6、V4.0.1
+
+* 修复了“求非终结符的FOLLOW集不完整“的bug；
+* 目前对于一些比较复杂的文法规则进行处理时，还会存在一些bug，会导致应用程序的崩溃、无响应或者LL(1)分析错误，鉴于目前身边有事，后期有空再加以改进，也欢迎有意者Pull Request~~
 
 ***
 
 ### 四、当前版本
 
-**V4.0.0**
+**V4.0.1**
 
 ***
 

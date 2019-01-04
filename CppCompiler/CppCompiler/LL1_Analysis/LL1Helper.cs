@@ -1011,7 +1011,12 @@ namespace CppCompiler
                                     k++;
                                 }
 
-                                List<String> followSetOfB = followSetOfNonterminalSymbol.ContainsKey(B) ? followSetOfNonterminalSymbol[B] : new List<String>();
+                                if(!followSetOfNonterminalSymbol.ContainsKey(B))
+                                {
+                                    GetFollowSetOfNonterminalSymbol(B);
+                                }
+
+                                List<String> followSetOfB = followSetOfNonterminalSymbol[B];
 
                                 if (k == production.Length - 1 && !B.Equals(A)) // B为产生式中最后一个非终结符，即β不存在，即A->αB，则将FOLLOW(A)加入FOLLOW(B)
                                 {
