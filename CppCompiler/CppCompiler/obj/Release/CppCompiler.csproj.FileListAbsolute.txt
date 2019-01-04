@@ -23,3 +23,5 @@ E:\Codes\GitHub\CppCompiler\CppCompiler\CppCompiler\obj\Release\CppCompiler.cspr
 E:\Codes\GitHub\CppCompiler\CppCompiler\CppCompiler\obj\Release\CppCompiler.exe
 E:\Codes\GitHub\CppCompiler\CppCompiler\CppCompiler\obj\Release\CppCompiler.pdb
 E:\Codes\GitHub\CppCompiler\CppCompiler\CppCompiler\obj\Release\CppCompiler.TinySyntaxAnalysisForm.resources
+E:\Codes\GitHub\CppCompiler\CppCompiler\CppCompiler\obj\Release\CppCompiler.InputSentenceForm.resources
+E:\Codes\GitHub\CppCompiler\CppCompiler\CppCompiler\obj\Release\CppCompiler.LL1AnalysisForm.resources

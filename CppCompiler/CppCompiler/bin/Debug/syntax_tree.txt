@@ -1,4 +1,4 @@
-TINY COMPILATION: E:\《大三上学习资料》\编译原理\作业\实验三\测试用例\DoWhileSample.tiny
+TINY COMPILATION: E:\《大三上学习资料》\编译原理\作业\实验三\测试用例\WhileSample.tiny
 
 Syntax tree:
 
@@ -9,7 +9,10 @@ Syntax tree:
       Const: 0
     Assign to: fact
       Const: 1
-    Do While
+    While
+      Op: >
+        Id: x
+        Const: 0
       Assign to: fact
         Op: *
           Id: fact
@@ -18,8 +21,5 @@ Syntax tree:
         Op: -
           Id: x
           Const: 1
-      Op: >
-        Id: x
-        Const: 0
     Write
       Id: fact

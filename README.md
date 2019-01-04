@@ -71,6 +71,10 @@
 <br/>
 <br/>
 
+
+
+**去掉 L->ε 前，文法有二义性，因为FIRST(L)={e, ε}含有ε，且FOLLOW(L)={e, $}，交集非空**
+
 ![9](Screenshots/9.png)
 
 <br/>
